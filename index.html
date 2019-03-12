@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Gitarzysta Solowy</title>
+		<meta name="viewport" content="width=device-width,shrink-to-fit=cover,initial-scale=1.0">
+		<meta name="robots" content="index,follow">
+		<meta charset="utf-8">
+		<meta name="author" content="Jakub Szpil">
+		<link rel="icon" href="img/favicon.ico">
+		<meta name="description" content="Muzyka i gitara - moje hobby">
+		<script src="jquery-3.3.1.min.js"></script>
+		<script src="entryScript.js"></script>
+		
+		<link rel="stylesheet" media="screen,print" href="CSS/main.css">
+		<link rel="stylesheet" href="css/home.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+		
+	</head>
+	<body>
+		<div id="root" class="root">
+
+		</div>
+
+
+
+		<script src="template.js"></script>
+		
+		<script>
+		
+			window.onload = creating();
+			
+			var pageSection = document.getElementById("page");
+			page.innerHTML = `
+				<p class="motto">Życie jest jak gitara, często się roztraja</p>
+				<div class="pageSelector">
+					<a class="pageAnchor link" href="about.html">
+						<i class="fas fa-book-open"></i><span>o hobby</span>
+					</a>
+					<a class="pageAnchor link" href="gear.html">
+						<i class="fas fa-guitar"></i><span>sprzęt</span>
+					</a>
+					<a class="pageAnchor link" href="media.html">
+						<i class="fas fa-headphones"></i><span>media</span>
+					</a>
+					<a class="pageAnchor link" href="gallery.html">
+						<i class="fas fa-image"></i><span>galeria</span>
+					</a>
+				</div>
+			`;
+			fading();
+		</script>
+		<script src="afterLoadScript.js"></script>
+	</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Gitarzysta Solowy</title>
+		<meta name="viewport" content="width=device-width,shrink-to-fit=cover,initial-scale=1.0">
+		<meta name="robots" content="index,follow">
+		<meta charset="utf-8">
+		<meta name="author" content="Jakub Szpil">
+		<link rel="icon" href="img/favicon.ico">
+		<meta name="description" content="Muzyka i gitara - moje hobby">
+		<script src="jquery-3.3.1.min.js"></script>
+		<script src="entryScript.js"></script>
+		
+		<link rel="stylesheet" media="screen,print" href="CSS/main.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+		<style>
+			.about {
+				width: 100%;
+				max-width: 900px;
+				min-height: 80vh;
+				height: auto;
+				margin: auto;
+				margin-top: 60px;
+				padding: 2em;
+				background: #f5f6fa;
+				box-shadow: 10px 10px 5px rgba(0, 0, 0, .5);
+				display: flex;
+				justify-content: center;
+				flex-direction: row-reverse;
+				flex-wrap: wrap;
+				color: black;
+			}
+			.text {
+				width: 100%;
+				font-size: 18px;
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			.text p {
+				margin: 1em 0;
+			}
+			.h {
+				display: block;
+				width: 100%;
+				height: 40px;
+				font-weight: 700;
+				margin: .5em;
+			}
+			
+		
+		</style>
+	</head>
+	<body>
+		<div id="root" class="root">
+
+		</div>
+
+
+
+		<script src="template.js"></script>
+		<script>
+			window.onload = creating();
+			fading();
+			var pageSection = document.getElementById("page");
+			pageSection.innerHTML = `
+				<div class="about">
+					<div class="text">
+						
+						<span class="h">Krótka historia..</span>
+						<p>Pasjonuję się grą na gitarze od niespełna 4 lat, co prawda grałem już mając 7 lat, ale nie ma co wspominać. Chęć do grania odrodziła się we mnie w 2 klasie gimnazjum, podczas oglądania różnorodnych coverów na platformie YouTube.</p>
+						<p>
+						Zakupiwszy pierwszą 'prawdziwą' gitarę typu stratocaster, zapisałem się na prywatne lekcje gry.
+						Po niecałym roku stwierdziłem, że potrzebuje zmian w dźwięku i postanowiłem sprzedać obecną i sprawić sobie nową gitarę.</p>
+						<p>
+						Do końca 2018 roku uczęszczałem na lekcje, zaś po nowym roku postanowiłem iść na własną rękę.
+						Po 2 latach bycia z jedną, poczułem, że trzeba wrócić do korzeni i do moich rąk trafił nowiutki stratocaster. Od tej pory mam możliwość dostosowywania się do różnych gatunków muzycznych.</p>
+						
+						<span class="h">Gram, a co dokładnie?</span>
+						<p>
+						Lubuję się w klimatach hardrockowych/metalowych. Uwielbiam grać i czerpać inspirację z utworów ulubionych zespołów takich jak: Metallica, Guns N' Roses, Queen itp.
+						Ostatnim czasem próbuję także komponować własne utwory, lecz samą gitarą dużo nie zdziałam.</p>
+					</div>
+					
+
+				</div>
+			`;
+			
+		</script>
+		<script src="afterLoadScript.js"></script>
+		
+	</body>
+</html>
